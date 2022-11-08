@@ -1,5 +1,5 @@
 .header{
-    background-color: $color-primario;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
     border: 1px solid;
     display: flex;
 
@@ -21,6 +21,10 @@
 
 h1{
     text-align: center;
+}
+
+.banner{
+    overflow: hidden;
 }
 
 .catalogo{
@@ -47,9 +51,10 @@ h1{
 }
 
 .catalogo a{
+    color: white;
     background-color: #0f1d40;
     border-radius: 10px;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 .catalogo a:hover{
@@ -57,8 +62,9 @@ h1{
 }
 
 .footer{
-    color: white;
-    background-color: #0f1d40;
+    
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+
 
     .footer__redes{
         display: flex;
@@ -150,5 +156,34 @@ h1{
         padding: 10px;
         margin-left: 150px;
     }
+
+    
+    .galeria__contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 50%); 
+        grid-template-rows: repeat(3, 50vh);
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .galeria__img{
+        margin: 18px;
+        
+    }
+
+    .galeria__img:hover{
+        box-shadow: 5px 5px 20px black;
+        transform: translateY(-1%)
+    }
+
+    .galeria2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
     
 }
